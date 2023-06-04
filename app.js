@@ -16,7 +16,7 @@ app.use(express.static('public'));
 
 // Connect to MongoDB Atlas
 mongoose
-  .connect('mongodb+srv://shathishwarma:B6YJ9siF1KRPMmTT@ecommerce.vt6lhcu.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect('mondb string, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB Atlas');
   })
