@@ -7,6 +7,8 @@ const User = require('./models/user'); // Import the User model
 
 // Create an Express application
 const app = express();
+// Set the view engine
+app.set('view engine', 'ejs');
 
 // Set up middleware
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -36,7 +38,6 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
   }
 };
 
-const User = mongoose.model('User', userSchema);
 
 // Routes
 app.get('/', (req, res) => {
